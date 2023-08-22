@@ -11,7 +11,7 @@ const processing = () =>{
     const randomDate = Date.now()+ getRandomInt(1000, 4000);
     return {
       randomNumber,
-      randomDate,
+      randomDate: new Date(+randomDate),
       randomWord,
     }
 }
